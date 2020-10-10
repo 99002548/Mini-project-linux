@@ -20,4 +20,4 @@ jobs:
     - name: make test
       run: |
         make  source
-        valgrind ./source/all.out
+        valgrind chmod 777 ./source/all.out
