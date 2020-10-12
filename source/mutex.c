@@ -31,7 +31,7 @@ void receive()
    key_t key;
     int msgid;
      int ret;
-     //int i; 
+     int i; 
 
     key = ftok("progfile", 65);
     msgid = msgget(key, 0666 | IPC_CREAT); 
@@ -118,7 +118,7 @@ int main(void)
 { 
     send();
     receive();
-   // int i = 0; 
+   int i ; 
     int error; 
   
     if (pthread_mutex_init(&mu, NULL) != 0) { 
