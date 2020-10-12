@@ -118,7 +118,7 @@ int main(void)
 { 
     send();
     receive();
-    int i = 0; 
+   // int i = 0; 
     int error; 
   
     if (pthread_mutex_init(&mu, NULL) != 0) { 
